@@ -7,7 +7,8 @@ public class Array2D{
         int r =sc.nextInt();
         System.out.print("column:");
         int c =sc.nextInt();
-        int [][] array;
+
+        int [][] array;// declaring 2d array
 
         array= new int [r][c];
         for (int i =0;i<r;i++){
@@ -23,10 +24,10 @@ public class Array2D{
         //     System.out.println();
         // }
 
+        // for each loop
         for (int []e : array){
             for(int el : e){
-                // System.out.print(el + " ");
-                System.out.print(el + " ");
+                 System.out.print(el + " ");
             }
             System.out.println();
         }

@@ -21,6 +21,7 @@ public class Array{
             System.out.print(num[i]+" ");
         }
         System.out.println();
+
         System.out.println("using for each loop");
         for (int element:num){ // for each loop
             System.out.print(element+" ");
