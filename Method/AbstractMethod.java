@@ -1,11 +1,12 @@
 package Method;
 
-//abstract class  abst{
-//   abstract void check(String name);
-//        }
-//class output extends abst{  //Abstract class is a blueprint
+abstract class  abst{
+   abstract void check(String name);
+        }
+class output extends abst{  //Abstract class is a blueprint
 
-class output {
+//class output {
+
     void check(String name){
         System.out.println(name);
     }
