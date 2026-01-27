@@ -27,7 +27,7 @@ class cellphone2{
 
 }
 
-class smartphone2 extends cellphone2 implements wifi,camera{
+class smartphone2 extends cellphone2 implements wifi2,camera2{
     public void takepic(){
         System.out.println("Taking pic :");
     }
@@ -57,8 +57,14 @@ class smartphone2 extends cellphone2 implements wifi,camera{
 
 public class Polymorphism{
     public static void main(String[] args) {
-//        camera2 cm1 = new smartphone2();
-//        cm1.takesnap();
+
+        camera2 cm1 = new smartphone2();//polymorphism
+
+//        cm1.getnetwork();//---> not allowed
+//        cm1.welcome();//---> not allowed
+        cm1.takesnap();
+        cm1.recordvideo();
+
 
 
     }
