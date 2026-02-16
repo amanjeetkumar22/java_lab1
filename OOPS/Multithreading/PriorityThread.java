@@ -21,10 +21,17 @@ public class PriorityThread {
         Priority c1 = new Priority("Aman");
         c4.setPriority(Thread.MAX_PRIORITY);
         c1.setPriority(Thread.MIN_PRIORITY);
+        c2.setPriority(3);
+        c3.setPriority(5);
         c1.start();
         c2.start();
         c3.start();
         c4.start();
+        System.out.println("Priority c1: " + c1.getPriority());
+        System.out.println("Priority c2: " + c2.getPriority());
+        System.out.println("Priority c3: " + c3.getPriority());
+        System.out.println("Priority c4: " + c4.getPriority());
+        System.out.println("Priority state c1: " + c1.getState());
 
 
 
