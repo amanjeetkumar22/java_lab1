@@ -3,14 +3,14 @@ package OOPS.Exception;
 import java.util.Scanner;
 
 class MyException extends Exception{
-    public String toString(){
-        return super.toString()+"_I am String.";
-//        return "_I am String.";
+    public String toString(){ //to print exception
+//        return super.toString()+"_I am String.";
+        return "_I am String.";
     }
 
-    public String getMessage(){
-        return super.getMessage()+"_I am message1.";
-//        return "_I am message.";
+    public String getMessage(){ // print exception message
+//        return super.getMessage()+"_I am message1."; //super -> it show the error ; here null
+        return "_I am message.";
     }
 }
 
@@ -22,14 +22,16 @@ public class ExceptionClass {
         if (num<9)
         {
             try{
-                throw new MyException();
+//                throw new MyException();
+                throw new ArithmeticException("this is mistake");
             }
             catch(Exception e){
-//            System.out.println(e.getMessage());
-            System.out.println(e.toString());
-//            System.out.println(e);
-//            e.printStackTrace();
-//                System.out.println("Success");
+            System.out.println(e.getMessage());
+            System.out.println(e.toString()); // using super we can print message and what error or eception occured
+            System.out.println(e);
+
+            e.printStackTrace();
+            System.out.println("Success");
             }
         }
     }
