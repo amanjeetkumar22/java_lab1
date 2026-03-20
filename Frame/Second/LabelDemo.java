@@ -1,4 +1,5 @@
-package Frame.First;
+package Frame.Second;
+
 import java.awt.*;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
@@ -7,7 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.border.Border;
 
 
-public class Main{
+public class LabelDemo extends JFrame {
 
     public static void main (String[]args){
 
