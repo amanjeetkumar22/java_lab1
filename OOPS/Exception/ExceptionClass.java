@@ -3,7 +3,7 @@ package OOPS.Exception;
 import java.util.Scanner;
 
 class MyException extends Exception{
-    public String toString(){ //to print exception
+    public String toString(){ //to print exception ////Method to print Exception information
 //        return super.toString()+"_I am String.";
         return "_I am String.";
     }
@@ -30,7 +30,7 @@ public class ExceptionClass {
             System.out.println(e.toString()); // using super we can print message and what error or eception occured
             System.out.println(e);
 
-            e.printStackTrace();
+            e.printStackTrace();//Method to print Exception information
             System.out.println("Success");
             }
         }
