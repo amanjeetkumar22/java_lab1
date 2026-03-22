@@ -1,4 +1,4 @@
-package Multithreading;
+package OOPS.Multithreading;
 
 import java.sql.SQLOutput;
 
