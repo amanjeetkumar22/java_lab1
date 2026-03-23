@@ -42,6 +42,6 @@ public class RunnableThreadInterface {
         Thread t1 = new Thread(r); //gun bullet method t is gun r is bullet
         Thread t2 = new Thread(r1);
         t1.start();
-        t2.start();
+        t2.start(); // when we call start() method it calls run() method internally
     }
 }
